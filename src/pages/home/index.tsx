@@ -458,19 +458,21 @@ export default function Home() {
             <Box className={cl(styles.product, styles.box)}>
                 <Text component={'h2'} className={cl(styles.title, styles.productTitle)}>Видео обзор</Text>
 
-                <Player
-                    playsInline={false}
-                    poster={
-                        'videoImg'
-                    }
-                    fluid={false}
-                    src={'https://adm.buffalo.uz/videos/video_mq.mp4'}
-                    height={400}
-                    aspectRatio={'16:9'}
-
-                >
-                    <BigPlayButton position="center"/>
-                </Player>
+                <div className={styles.videoWrapper}>
+                    <Player
+                        playsInline={false}
+                        poster={
+                            'videoImg'
+                        }
+                        fluid={false}
+                        src={'https://adm.buffalo.uz/videos/video_mq.mp4'}
+                        height={400}
+                        width={600}
+                        aspectRatio={'16:9'}
+                    >
+                        <BigPlayButton position="center"/>
+                    </Player>
+                </div>
 
             </Box>
 
@@ -502,13 +504,13 @@ export default function Home() {
                             className={styles.modalInput}
                         />
                     </Input.Wrapper>
-                    <Input.Wrapper label="Тел.номер" required >
+                    <Input.Wrapper label="Тел.номер" required>
                         <Input<any>
                             placeholder="+998"
                             className={styles.modalInput}
                         />
                     </Input.Wrapper>
-                    <Button className={styles.productItemBtn} >
+                    <Button className={styles.productItemBtn}>
                         Заказать
                     </Button>
                 </Flex>
