@@ -1,0 +1,33 @@
+.productCharacteristicsWrapper{
+  margin: 0;
+}
+
+.productCharacteristicsTitle {
+  color: #353435;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding-bottom: 0.75rem;
+}
+
+.productCharacteristicsInfoRow{
+  padding: 0.75rem;
+  background-color: #F9FAFB;
+  &:nth-child(2n) {
+    background-color: #FFF;
+  }
+}
+
+.productCharacteristicsInfo {
+  color: #9C9A99;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.productCharacteristicsInfoDesc {
+  color: #353435;
+  text-align: right;
+  font-size: 0.875rem;
+  font-weight: 500;
+}

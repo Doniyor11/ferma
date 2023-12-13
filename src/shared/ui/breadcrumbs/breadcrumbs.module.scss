@@ -1,0 +1,30 @@
+
+.breadcrumbsSeparator {
+  margin: 0 0.37rem 0 0.37rem;
+}
+
+.breadcrumbs{
+  flex-wrap: wrap;
+  gap: 0.37rem 0;
+}
+
+.breadcrumbsItem {
+  color: #070200;
+  font-size: 1rem;
+  font-weight: 400;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:last-child {
+    color: #9C9A99;
+  }
+}
+@media screen and (max-width: 576px){
+  .breadcrumbsItem{
+    font-size: 0.75rem;
+    line-height: 130%;
+    word-break: break-word;
+  }
+}

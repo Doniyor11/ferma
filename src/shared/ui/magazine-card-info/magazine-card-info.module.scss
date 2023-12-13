@@ -1,0 +1,54 @@
+
+.magazineMapCard {
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #EBEBEB;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #EBEBEB;
+  }
+
+  &.active {
+    border: 1px solid #CF091E;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  .magazineMapCard {
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid #EBEBEB;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.magazineMapCardTitle {
+  color: #070200;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+@media screen and (max-width: 576px) {
+  .magazineMapCardTitle {
+    font-size: 1rem;
+  }
+}
+
+.magazineMapCardSubTitle {
+  color: #9C9A99;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+  gap: 0 0.38rem;
+}
+
+@media screen and (max-width: 576px) {
+  .magazineMapCardSubTitle {
+    font-size: 0.875rem;
+  }
+}

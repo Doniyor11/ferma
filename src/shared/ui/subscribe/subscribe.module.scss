@@ -1,0 +1,132 @@
+
+.subscribe {
+  border-radius: 1.5rem;
+  background-color: #EBEBEB;
+  padding: 2.25rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  background-image: url('../../../../public/images/subscribe/1.png'), url('../../../../public/images/subscribe/2.png');
+  background-repeat: no-repeat;
+  background-position: left top, right 0;
+}
+
+@media screen and (max-width: 576px) {
+  .subscribe {
+    padding: 1.5rem;
+  }
+}
+
+.subscribeTitle {
+  color: #070200;
+  font-family: 'Rubik', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 576px) {
+  .subscribeTitle {
+    font-size: 1.25rem;
+  }
+}
+
+.subscribeSubTitle {
+  color: #353435;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .subscribeSubTitle {
+    font-size: 0.75rem;
+    line-height: 130%;
+  }
+}
+
+.subscribeInputWrapper {
+  background-color: #fff;
+  border-radius: 0.375rem;
+  padding: 0.125rem 0.125rem 0.125rem 1rem;
+  width: 33rem;
+  margin-bottom: 1.5rem;
+
+  .subscribeInput {
+    flex: 1;
+
+    input {
+      border: none;
+      color: #353435;
+      font-size: 1rem;
+      font-weight: 400;
+      height: 2.50rem;
+
+      &::placeholder {
+        color: #9C9A99;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .subscribeBtn {
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 0.375rem;
+    height: 2.50rem;
+    background-color: #E41C38;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .subscribeInputWrapper {
+    width: 100%;
+  }
+}
+
+.subscribeDesc {
+  color: #353435;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 140%;
+  max-width: 28.5rem;
+  text-align: center;
+
+  span {
+    color: #E2000F;
+  }
+}
+
+.modalBody{
+  padding: 3.12rem;
+}
+
+.modalTitle{
+  color: #353435;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0 0;
+}
+.modalSubTitle{
+  color: #9C9A99;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 2rem;
+}
+
+.subscribeModalBtn{
+  height: 2.93rem;
+  color: #FFF;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 0.375rem;
+  background-color: #E41C38 !important;
+  &:hover{
+    background-color: #CF091E !important;
+  }
+}

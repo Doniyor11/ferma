@@ -1,0 +1,84 @@
+
+.productViewsCheckbox {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #FFF;
+
+  .checkbox {
+    position: relative;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 0.375rem;
+    border: 1px solid #EBEBEB;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #070200;
+    font-size: 1rem;
+    font-weight: 400;
+
+    .point {
+      width: 1.5rem;
+      height: 1.5rem;
+      border: 1px solid #EBEBEB;
+      border-radius: 40px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      .point {
+        width: 1.25rem;
+        height: 1.25rem;
+      }
+    }
+
+    &.active {
+      border-radius: 6px;
+      border: 1px solid #E41C38;
+      background-color: #FDEBEC;
+      color: #FDEBEC;
+
+      .point {
+        border: 6px solid #E41C38;
+        border-radius: 40px;
+      }
+
+      @media screen and (max-width: 1024px) {
+        .point {
+          border: 5px solid #E41C38;
+        }
+      }
+
+      .productViewsCheckboxTitle {
+        color: #070200;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .checkbox {
+      padding: 0.5rem;
+    }
+  }
+
+  .productViewsCheckboxTitle {
+    color: #9C9A99;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .productViewsCheckboxTitle {
+      font-size: 0.80rem;
+    }
+  }
+  @media screen and (max-width: 845px) {
+    .productViewsCheckboxTitle {
+      font-size: 1rem;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

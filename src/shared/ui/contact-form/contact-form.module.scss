@@ -1,0 +1,49 @@
+
+.contactWrapperFormTitle {
+  color: #070200;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.contactWrapperFormSubTitle {
+  color: #9C9A99;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 1.5rem;
+}
+
+.contactWrapperFormInput {
+  input {
+    border-radius: 0.375rem;
+    border: 1px solid #EBEBEB;
+    height: 2.875rem;
+
+    &:focus {
+      border: 1px solid #E41C38;
+    }
+  }
+
+  textarea {
+    border-radius: 0.375rem;
+    border: 1px solid #EBEBEB;
+    height: 6.25rem;
+
+    &:focus {
+      border: 1px solid #E41C38;
+    }
+  }
+}
+
+.contactWrapperFormInputLabel {
+  color: #353435;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.contactWrapperSubscribe {
+  margin-bottom: 5rem;
+}

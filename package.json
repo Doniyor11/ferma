@@ -1,0 +1,54 @@
+{
+  "name": "next-mantine-ts",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "export": "next export",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/server": "^11.11.0",
+    "@mantine/carousel": "^6.0.18",
+    "@mantine/core": "^6.0.10",
+    "@mantine/dates": "6.0.10",
+    "@mantine/form": "6.0.10",
+    "@mantine/hooks": "^6.0.10",
+    "@mantine/next": "^6.0.10",
+    "@svgr/webpack": "^8.0.1",
+    "@types/video-react": "^0.15.5",
+    "axios": "^1.4.0",
+    "classnames": "^2.3.2",
+    "dayjs": "^1.11.10",
+    "embla-carousel-react": "^7.1.0",
+    "html-react-parser": "^4.2.1",
+    "i18next": "22.0.4",
+    "next": "^13.4.1",
+    "next-i18next": "12.0.0",
+    "next-translate": "^2.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "12.0.0",
+    "react-imask": "^7.1.3",
+    "react-router-dom": "^6.14.2",
+    "sass": "^1.64.2",
+    "swiper": "^11.0.4",
+    "video-react": "^0.16.0",
+    "zustand": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.0",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "next-translate-plugin": "^2.5.3",
+    "typescript": "^5.0.4"
+  },
+  "prettier": {
+    "bracketSameLine": true,
+    "printWidth": 100
+  },
+  "packageManager": "pnpm@7.5.1"
+}

@@ -1,0 +1,64 @@
+.paymentCard {
+  border-radius: 0.75rem;
+  padding: 1.56rem 2rem;
+  background-image: url("../../../../public/images/home/payment-bg.png");
+  background-color: #fff;
+  background-position: right;
+  background-repeat: no-repeat;
+  flex: 1;
+}
+
+@media screen and (max-width: 576px) {
+  .paymentCard {
+    padding: 1.25rem;
+    background-image: url("../../../../public/images/home/payment-mobile-bg.png");
+  }
+}
+
+.paymentCardTitle {
+  color: #070200;
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.38rem;
+}
+
+
+@media screen and (max-width: 576px) {
+  .paymentCardTitle {
+    font-size: 1rem;
+  }
+}
+
+
+.paymentCardSubTitle {
+  color: #353435;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 140%;
+  margin-bottom: 1rem;
+  max-width: 15rem;
+}
+
+@media screen and (max-width: 576px) {
+  .paymentCardSubTitle {
+    font-size: 0.75rem;
+    max-width: 10.5rem;
+  }
+}
+
+
+.paymentCardLink {
+  display: flex;
+  align-items: center;
+  gap: 0 0.5rem;
+  color: #E2000F;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 120%;
+
+
+  &:hover {
+    text-decoration: none;
+  }
+}

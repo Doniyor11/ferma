@@ -1,0 +1,32 @@
+.menuContentWrapper {
+  margin: 0;
+}
+
+.menuContentWrapperTitle {
+  color: #353435;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.menuContentWrapperUl {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem 0;
+}
+
+.menuContentWrapperLi {
+  padding: 0.5rem 0.75rem 0.5rem 0;
+}
+
+.menuContentWrapperLink {
+  color: #353435;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: #CF091E;
+  }
+}
