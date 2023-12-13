@@ -135,7 +135,7 @@ export default function Home() {
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
                             </Link>
-                            <Button className={styles.productItemBtn}>
+                            <Button className={styles.productItemBtn} onClick={open}>
                                 Заказать
                             </Button>
                         </Box>
@@ -161,7 +161,7 @@ export default function Home() {
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
                             </Link>
-                            <Button className={styles.productItemBtn}>
+                            <Button className={styles.productItemBtn} onClick={open}>
                                 Заказать
                             </Button>
                         </Box>
@@ -187,7 +187,7 @@ export default function Home() {
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
                             </Link>
-                            <Button className={styles.productItemBtn}>
+                            <Button className={styles.productItemBtn} onClick={open}>
                                 Заказать
                             </Button>
                         </Box>
@@ -213,7 +213,7 @@ export default function Home() {
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
                             </Link>
-                            <Button className={styles.productItemBtn}>
+                            <Button className={styles.productItemBtn} onClick={open}>
                                 Заказать
                             </Button>
                         </Box>
@@ -239,7 +239,7 @@ export default function Home() {
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
                             </Link>
-                            <Button className={styles.productItemBtn}>
+                            <Button className={styles.productItemBtn} onClick={open}>
                                 Заказать
                             </Button>
                         </Box>
@@ -302,7 +302,7 @@ export default function Home() {
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
                             </Link>
-                            <Button className={styles.productItemBtn}>
+                            <Button className={styles.productItemBtn} onClick={open}>
                                 Заказать
                             </Button>
                         </Box>
@@ -328,7 +328,7 @@ export default function Home() {
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
                             </Link>
-                            <Button className={styles.productItemBtn}>
+                            <Button className={styles.productItemBtn} onClick={open}>
                                 Заказать
                             </Button>
                         </Box>
@@ -354,7 +354,7 @@ export default function Home() {
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
                             </Link>
-                            <Button className={styles.productItemBtn}>
+                            <Button className={styles.productItemBtn} onClick={open}>
                                 Заказать
                             </Button>
                         </Box>
@@ -380,7 +380,7 @@ export default function Home() {
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
                             </Link>
-                            <Button className={styles.productItemBtn}>
+                            <Button className={styles.productItemBtn} onClick={open}>
                                 Заказать
                             </Button>
                         </Box>
@@ -406,7 +406,7 @@ export default function Home() {
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
                             </Link>
-                            <Button className={styles.productItemBtn}>
+                            <Button className={styles.productItemBtn} onClick={open}>
                                 Заказать
                             </Button>
                         </Box>
