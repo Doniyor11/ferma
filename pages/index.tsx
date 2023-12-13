@@ -15,7 +15,7 @@ export default function Main() {
     return (
         <>
             <Head>
-                <title>Goodzone</title>
+                <title>Vidpremium.uz</title>
                 {/*<meta name="description" content={titleItem?.description ? titleItem?.description : "Main"}/>*/}
             </Head>
             <HomePage/>
