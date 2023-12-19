@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 import {useRouter} from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
-import aboutImage from '../../../public/images/about.png';
+import aboutImage from '../../../public/images/about.jpg';
 import productImage1 from '../../../public/images/product1.png';
 import productImage2 from '../../../public/images/product2.png';
 import productImage3 from '../../../public/images/product3.png';
@@ -52,9 +52,7 @@ export default function Home() {
         <Box className={styles.container}>
             <Box className={styles.heroWrapper}>
                 <Box className={styles.heroWrapperInfo}>
-                    <Text component={'h1'} className={styles.heroWrapperTitle}>«ФЕРМА Технологии Кормления»</Text>
-                    <Text component={'p'} className={styles.heroWrapperDesc}>Максимально раскрывает
-                        генетический <br/> потенциал продуктивных животных</Text>
+                    <Text component={'h1'} className={styles.heroWrapperTitle}>«Кормовые добавки и Технологии Кормления»</Text>
                 </Box>
             </Box>
 
@@ -104,7 +102,6 @@ export default function Home() {
                                 вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
                                 максимальный надой молока.
                             </Text>
-                            <Text component={'p'} className={styles.productItemPrice}>245 000 Сум</Text>
                             <Link href={'/product/1'} className={styles.productItemLink}>
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
@@ -130,7 +127,6 @@ export default function Home() {
                                 вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
                                 максимальный надой молока.
                             </Text>
-                            <Text component={'p'} className={styles.productItemPrice}>245 000 Сум</Text>
                             <Link href={'/product/1'} className={styles.productItemLink}>
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
@@ -156,7 +152,6 @@ export default function Home() {
                                 вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
                                 максимальный надой молока.
                             </Text>
-                            <Text component={'p'} className={styles.productItemPrice}>245 000 Сум</Text>
                             <Link href={'/product/1'} className={styles.productItemLink}>
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
@@ -182,7 +177,6 @@ export default function Home() {
                                 вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
                                 максимальный надой молока.
                             </Text>
-                            <Text component={'p'} className={styles.productItemPrice}>245 000 Сум</Text>
                             <Link href={'/product/1'} className={styles.productItemLink}>
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
@@ -208,7 +202,6 @@ export default function Home() {
                                 вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
                                 максимальный надой молока.
                             </Text>
-                            <Text component={'p'} className={styles.productItemPrice}>245 000 Сум</Text>
                             <Link href={'/product/1'} className={styles.productItemLink}>
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
@@ -234,7 +227,6 @@ export default function Home() {
                                 вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
                                 максимальный надой молока.
                             </Text>
-                            <Text component={'p'} className={styles.productItemPrice}>245 000 Сум</Text>
                             <Link href={'/product/1'} className={styles.productItemLink}>
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
@@ -271,7 +263,6 @@ export default function Home() {
                                 вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
                                 максимальный надой молока.
                             </Text>
-                            <Text component={'p'} className={styles.productItemPrice}>245 000 Сум</Text>
                             <Link href={'/product/1'} className={styles.productItemLink}>
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
@@ -297,7 +288,6 @@ export default function Home() {
                                 вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
                                 максимальный надой молока.
                             </Text>
-                            <Text component={'p'} className={styles.productItemPrice}>245 000 Сум</Text>
                             <Link href={'/product/1'} className={styles.productItemLink}>
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
@@ -323,7 +313,6 @@ export default function Home() {
                                 вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
                                 максимальный надой молока.
                             </Text>
-                            <Text component={'p'} className={styles.productItemPrice}>245 000 Сум</Text>
                             <Link href={'/product/1'} className={styles.productItemLink}>
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
@@ -349,7 +338,6 @@ export default function Home() {
                                 вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
                                 максимальный надой молока.
                             </Text>
-                            <Text component={'p'} className={styles.productItemPrice}>245 000 Сум</Text>
                             <Link href={'/product/1'} className={styles.productItemLink}>
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
@@ -375,7 +363,6 @@ export default function Home() {
                                 вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
                                 максимальный надой молока.
                             </Text>
-                            <Text component={'p'} className={styles.productItemPrice}>245 000 Сум</Text>
                             <Link href={'/product/1'} className={styles.productItemLink}>
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
@@ -401,7 +388,6 @@ export default function Home() {
                                 вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
                                 максимальный надой молока.
                             </Text>
-                            <Text component={'p'} className={styles.productItemPrice}>245 000 Сум</Text>
                             <Link href={'/product/1'} className={styles.productItemLink}>
                                 Подробнее
                                 <Image src={iconArrow} alt={''}/>
@@ -420,35 +406,25 @@ export default function Home() {
             </Box>
 
             <Box className={cl(styles.product, styles.box)}>
-                <Text component={'h2'} className={cl(styles.title, styles.productTitle)}>Наши препораты</Text>
-                <Grid gutter={50}>
-                    <Grid.Col span={4}>
+                <Text component={'h2'} className={cl(styles.title, styles.productTitle)}>Наши сервисные услуги</Text>
+                <Grid gutter="xl">
+                    <Grid.Col span={6} bg={'#f7f7f7'}>
                         <Box>
                             <Flex justify={'center'}>
                                 <Image src={icon1} alt={''}/>
                             </Flex>
                             <Text className={styles.iconTitle}>
-                                Низкая цена
+                                Составление расходные кормление
                             </Text>
                         </Box>
                     </Grid.Col>
-                    <Grid.Col span={4}>
+                    <Grid.Col span={6} bg={'#f7f7f7'}>
                         <Box>
                             <Flex justify={'center'}>
                                 <Image src={icon2} alt={''}/>
                             </Flex>
                             <Text className={styles.iconTitle}>
-                                Качевство
-                            </Text>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box>
-                            <Flex justify={'center'}>
-                                <Image src={icon3} alt={''}/>
-                            </Flex>
-                            <Text className={styles.iconTitle}>
-                                Увеличение молока
+                                Подготовка схема выращивания телят до нитья
                             </Text>
                         </Box>
                     </Grid.Col>
