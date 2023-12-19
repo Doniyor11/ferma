@@ -35,3 +35,15 @@
     width: 4rem !important;
   }
 }
+
+.footerInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footerInfoText {
+  color: #262626;
+  font-size: 0.75rem;
+  font-weight: 400;
+}

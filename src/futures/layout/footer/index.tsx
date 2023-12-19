@@ -7,6 +7,7 @@ import Icon2 from "../../../../public/images/span.img-convert2.png"
 import useTranslation from "next-translate/useTranslation";
 import SvgIcon from "../../../shared/ui/svg";
 import Image from "next/image";
+import IconLogo from '../../../../public/images/LOGO.png';
 
 export default function Footer() {
     const matches = useMediaQuery('(max-width: 1439px)');
@@ -17,19 +18,23 @@ export default function Footer() {
     return (
         <Box className={styles.footer}>
             <Flex justify={'space-between'}>
-                <Text component={'p'} className={styles.footerText}>
-                    Vidpremium.uz
-                </Text>
+                <Flex align={'center'} gap={'1rem'}>
+                    <Text component={'p'} className={styles.footerText}>
+                        Vidpremium.uz
+                    </Text>
+                    <Image src={IconLogo} alt={'Logo'} width={200}/>
+                </Flex>
                 <Flex gap={'2rem'}>
-                    <Link href={'/'} className={styles.footerInfo}>
+                    <Box className={styles.footerInfo}>
                         <Box>
                             <Image src={Icon1} alt={''}/>
                         </Box>
                         <Flex direction={'column'} gap={'0.25rem'}>
-                            <Text component={'p'} className={styles.footerInfoText}>+99899 879-80-08</Text>
-                            <Text component={'p'} className={styles.footerInfoText}>+99897 120-33-22</Text>
+                            <Link href={'tel:+99899 879-80-08'} className={styles.footerInfoText}>+99899 879-80-08</Link>
+                            <Link href={'tel:+99897 120-33-22'} className={styles.footerInfoText}>+99897 120-33-22</Link>
+                            <Link href={'tel:+99899 853-05-05'} className={styles.footerInfoText}>+99899 853-05-05</Link>
                         </Flex>
-                    </Link>
+                    </Box>
                     <Link href={'/'} className={styles.footerInfo}>
                         <Box>
                             <Image src={Icon2} alt={''}/>

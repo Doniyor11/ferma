@@ -1,8 +1,9 @@
-/** @type {import('next').NextConfig} */
-const nextTranslate = require('next-translate-plugin')
-
 const nextConfig = {
     reactStrictMode: true,
+    output: 'export',
+    images: {
+        unoptimized: true
+    },
     webpack(config) {
         config.module.rules.push({
             loader: '@svgr/webpack',
@@ -30,30 +31,4 @@ const nextConfig = {
     }
 }
 
-module.exports = nextTranslate(nextConfig)
-
-// webpack(config) {
-//     config.module.rules.push({
-//         loader: '@svgr/webpack',
-//         test: /\.svg$/i,
-//         issuer: /\.[jt]sx?$/,
-//         options: {
-//             prettier: false,
-//             svgo: true,
-//             svgoConfig: {
-//                 plugins: [
-//                     {
-//                         name: 'preset-default',
-//                         params: {
-//                             overrides: { removeViewBox: true },
-//                         },
-//                     },
-//                 ],
-//             },
-//             titleProp: true,
-//         },
-//     });
-//
-//     return config;
-//
-// }
+module.exports = nextConfig
