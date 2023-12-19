@@ -43,7 +43,7 @@ const elements = [
     {name: 'Фосфор', symbol: '3,2', mass: '%'},
     {name: 'Натрий', symbol: '9,0', mass: '%'},
     {name: 'Магний', symbol: '3,0', mass: '%'},
-    {name: 'Продукт ферментации дрожжей Saccharomyces cerevisiae инактив.', },
+    {name: 'Продукт ферментации дрожжей Saccharomyces cerevisiae инактив.',},
     {name: 'Витамин А', symbol: '1 100 000', mass: 'мг'},
     {name: 'Витамин D3', symbol: '110 000', mass: 'мг'},
     {name: 'Витамин Е', symbol: '4 000', mass: 'мг'},
@@ -56,7 +56,6 @@ const elements = [
     {name: 'Селен', symbol: '35', mass: 'мг'},
 ];
 
-
 const rows = elements.map((element) => (
     <tr key={element.name}>
         <td>{element.name}</td>
@@ -64,6 +63,107 @@ const rows = elements.map((element) => (
         <td>{element.mass}</td>
     </tr>
 ));
+
+const product = [
+    {
+        id: 1,
+        img: productImage1,
+        title: 'Витаминно-минеральный премикс для высокопродуктивных дойных коров',
+        desc: 'Витаминно-минеральный премикс для высокопродуктивных дойных коров\n' +
+            'Профессионально сбалансированный рецепт для высокопродуктивных дойных коров после\n' +
+            'оттела. Использование продукта гарантирует всестороннее удовлетворение потребностей\n' +
+            'животных в витаминах микро и макроэлементах, снижает вероятность заболеваний, связанные\n' +
+            'с нарушением обмена веществ, улучшает рубцовое пищеварение и конверсию корма.',
+
+    },
+    {
+        id: 2,
+        img: productImage1,
+        title: 'Витаминно-минеральный премикс для\n' +
+            '                                высокопродуктивных дойных коров +копыта',
+        desc: '   Витаминно-минеральный премикс для высокопродуктивных дойных коров+копыта\n' +
+            '                                Профессионально сбалансированный рецепт для высокопродуктивных дойных коров после оттела\n' +
+            '                                для профилактики и лечения коров с проблемными копытами. Использование продукта\n' +
+            '                                гарантирует всестороннее удовлетворение потребностей животных в витаминах микро и\n' +
+            '                                макроэлементах, снижает вероятность заболеваний, связанные с нарушением обмена веществ,\n' +
+            '                                улучшает рубцовое пищеварение и конверсию корма, а также улучшает кровообращение в\n' +
+            '                                копытах, тем самым улучшая их состояние.',
+
+    },
+    {
+        id: 3,
+        img: productImage1,
+        title: 'Витаминно-минеральный премикс для\n' +
+            '                                дойных коров в сухостое',
+        desc: '   Витаминно-минеральный премикс для высокопродуктивных дойных коров+копыта\n' +
+            '                                Профессионально сбалансированный рецепт для высокопродуктивных дойных коров после оттела\n' +
+            '                                для профилактики и лечения коров с проблемными копытами. Использование продукта\n' +
+            '                                гарантирует всестороннее удовлетворение потребностей животных в витаминах микро и\n' +
+            '                                макроэлементах, снижает вероятность заболеваний, связанные с нарушением обмена веществ,\n' +
+            '                                улучшает рубцовое пищеварение и конверсию корма, а также улучшает кровообращение в\n' +
+            '                                копытах, тем самым улучшая их состояние.',
+
+    },
+    {
+        id: 4,
+        img: productImage1,
+        title: 'Витаминно-минеральный премикс для\n' +
+            '                                телят до 6 мес.',
+        desc: ' Витаминно-минеральный премикс для телят до 6 мес.\n' +
+            '                                Профессионально сбалансированный рецепт для телят. Использование продукта гарантирует\n' +
+            '                                всестороннее развитие, удовлетворение потребностей в витаминах микро и макроэлементах,\n' +
+            '                                способствует развитию рубца, увеличению потребления сухого вещества и рост телят.',
+    },
+    {
+        id: 5,
+        img: productImage1,
+        title: 'Витаминно-минеральный премикс для\n' +
+            '                                телок и нетелей',
+        desc: ' Витаминно-минеральный премикс для телок и нетелей\n' +
+            '                                Профессионально сбалансированный рецепт для телек и нетелей гарантирует всестороннее\n' +
+            '                                удовлетворение потребностей животных в витаминах микро и макроэлементах, быстрый рост и\n' +
+            '                                нормативные кондиции тела телок, своевременное и качественное развитие репродуктивных\n' +
+            '                                функций.',
+    },
+    {
+        id: 6,
+        img: productImage1,
+        title: 'Витаминно-минеральный премикс для\n' +
+            '                                бычков на откорме',
+        desc: '  Витаминно-минеральный премикс для бычков на откорме\n' +
+            '                                Профессионально сбалансированный рецепт для бычков на откорме гарантирует всестороннее\n' +
+            '                                удовлетворение потребностей животных в витаминах микро и макроэлементах, снижает\n' +
+            '                                вероятность ацидоза при откорме с большим количеством зерновых, улучшает рубцовое\n' +
+            '                                пищеварение, увеличивает потребление сухого вещества, обеспечивает большие привесы.',
+    },
+    {
+        id: 7,
+        img: productImage1,
+        title: 'Стартерные корма для телят',
+        desc: ' Стартерные корма для телят до 90 дня\n' +
+            '                                Профессионально сбалансированные рецептуры гарантируют всестороннее удовлетворение\n' +
+            '                                потребностей телят в питательных веществах, способствуют хорошему развитию рубца и всего\n' +
+            '                                пищеварительного тракта. Использование стартерных кормов помогает раньше и легче\n' +
+            '                                перевести телята от выпойки молока к основным рационам при это достигая веса телят не\n' +
+            '                                менее 110–120 кг на 90 день.',
+    },
+    {
+        id: 8,
+        img: productImage1,
+        title: 'Кормовая энергетическая добавка «Энерго Байпас»',
+        desc: 'Кормовая энергетическая добавка с защищенным жиром, белком и прекурсором глюкозы «Энерго Байпас»\n' +
+            '\n' +
+            'Суть действия добавки заключается в том, что защищенные белки, жиры и сахара минуя рубец попадает в тонкие кишки, где сахара усваиваются как глюкоза, увеличивается количество неперевариваемого в рубце белка, а жир не затрудняя работу рубцовой микрофлоры увеличивает энергию лактации. Это очень актуально для коров 15 дней до отела и в первые 3 месяца после оттела, так как у них рубец не может переваривать большие количества крахмала, грубых и сочных кормов. Добавка также уменьшает риск кетоза.\n',
+    },
+    {
+        id: 9,
+        img: productImage1,
+        title: 'Кормовая энергетическая добавка «Рубец»',
+        desc: 'Кормовая энергетическая добавка для профилактики и лечения кетоза «Рубец»\n' +
+            '\n' +
+            'Добавка состоит из смеси солей пропионовой кислоты. Применяется для профилактики и лечения кетоза в период после оттела и в период отрицательной энергетики у дойных коров. Данная добавка восполняют в организме коровы необходимый уровень обменной энергии. Применяя ее в рационы у коров повышается молочная продуктивность, нормализуется обмен веществ, увеличивается количество глюкозы в организме, повышается оплодотворяемость животных, идет сокращение сервис периода. Она также способствует увеличению потребления сухого вещества\n'
+    },
+]
 
 
 export default function Home() {
@@ -116,176 +216,33 @@ export default function Home() {
             <Box className={cl(styles.product, styles.box)}>
                 <Flex align={'center'} justify={'space-between'} className={styles.productTitleHead}>
                     <Text component={'h2'} className={cl(styles.title,)}>Наша продукция</Text>
-                    <Link href={'tel:+998712000000'} className={styles.productLink}>
+                    <Link href={'tel:+99898 879 80 08'} className={styles.productLink}>
                         <Image src={iconPhone} alt={''}/>
                         Консультации по кормлению
                     </Link>
                 </Flex>
                 <Grid gutter={50}>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage1} alt={''} width={130}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Витаминно-минеральный премикс для
-                                высокопродуктивных дойных коров</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Витаминно-минеральный премикс для высокопродуктивных дойных коров
-                                Профессионально сбалансированный рецепт для высокопродуктивных дойных коров после
-                                оттела. Использование продукта гарантирует всестороннее удовлетворение потребностей
-                                животных в витаминах микро и макроэлементах, снижает вероятность заболеваний, связанные
-                                с нарушением обмена веществ, улучшает рубцовое пищеварение и конверсию корма.
-
-                            </Text>
-                            <Text className={styles.productItemLink} onClick={openMore}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Text>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage1} alt={''} width={130}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Витаминно-минеральный премикс для
-                                высокопродуктивных дойных коров +копыта</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Витаминно-минеральный премикс для высокопродуктивных дойных коров+копыта
-                                Профессионально сбалансированный рецепт для высокопродуктивных дойных коров после оттела
-                                для профилактики и лечения коров с проблемными копытами. Использование продукта
-                                гарантирует всестороннее удовлетворение потребностей животных в витаминах микро и
-                                макроэлементах, снижает вероятность заболеваний, связанные с нарушением обмена веществ,
-                                улучшает рубцовое пищеварение и конверсию корма, а также улучшает кровообращение в
-                                копытах, тем самым улучшая их состояние.
-                            </Text>
-                            <Text className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Text>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage1} alt={''} width={'130'}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Витаминно-минеральный премикс для
-                                дойных коров в сухостое</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Витаминно-минеральный премикс для дойных коров в сухостое
-                                Профессионально сбалансированный рецепт для высокопродуктивных дойных коров в период
-                                сухостоя. Использование продукта гарантирует всестороннее удовлетворение потребностей
-                                животных в витаминах микро и макроэлементах, снижает вероятность заболеваний, связанные
-                                с нарушением обмена веществ в период до оттела и в момент оттела. Обеспечивает качество
-                                приплода и высокие уровни надоев во время лактации
-                            </Text>
-                            <Text className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Text>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage1} alt={''} width={130}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Витаминно-минеральный премикс для
-                                телят до 6 мес.</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Витаминно-минеральный премикс для телят до 6 мес.
-                                Профессионально сбалансированный рецепт для телят. Использование продукта гарантирует
-                                всестороннее развитие, удовлетворение потребностей в витаминах микро и макроэлементах,
-                                способствует развитию рубца, увеличению потребления сухого вещества и рост телят.
-                            </Text>
-                            <Text className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Text>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage1} alt={''} width={130}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Витаминно-минеральный премикс для
-                                телок и нетелей</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Витаминно-минеральный премикс для телок и нетелей
-                                Профессионально сбалансированный рецепт для телек и нетелей гарантирует всестороннее
-                                удовлетворение потребностей животных в витаминах микро и макроэлементах, быстрый рост и
-                                нормативные кондиции тела телок, своевременное и качественное развитие репродуктивных
-                                функций.
-                            </Text>
-                            <Text className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Text>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage1} alt={''} width={130}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Витаминно-минеральный премикс для
-                                бычков на откорме</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Витаминно-минеральный премикс для бычков на откорме
-                                Профессионально сбалансированный рецепт для бычков на откорме гарантирует всестороннее
-                                удовлетворение потребностей животных в витаминах микро и макроэлементах, снижает
-                                вероятность ацидоза при откорме с большим количеством зерновых, улучшает рубцовое
-                                пищеварение, увеличивает потребление сухого вещества, обеспечивает большие привесы.
-                            </Text>
-                            <Text className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Text>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage1} alt={''} width={130}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Стартерные корма для телят</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Стартерные корма для телят до 90 дня
-                                Профессионально сбалансированные рецептуры гарантируют всестороннее удовлетворение
-                                потребностей телят в питательных веществах, способствуют хорошему развитию рубца и всего
-                                пищеварительного тракта. Использование стартерных кормов помогает раньше и легче
-                                перевести телята от выпойки молока к основным рационам при это достигая веса телят не
-                                менее 110–120 кг на 90 день.
-                            </Text>
-                            <Link href={''} className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Link>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
+                    {
+                        product.map((item, index) => (
+                            <Grid.Col span={4} key={index}>
+                                <Box className={styles.productItem}>
+                                    <Flex justify={'center'}>
+                                        <Image src={item.img} alt={''} width={130}/>
+                                    </Flex>
+                                    <Text component={'h3'} className={styles.productItemTitle}>{item.title}</Text>
+                                    <Text component={'p'}
+                                          className={styles.productItemDesc}>{item.desc}</Text>
+                                    <Text className={styles.productItemLink} onClick={openMore}>
+                                        Подробнее
+                                        <Image src={iconArrow} alt={''}/>
+                                    </Text>
+                                    <Button className={styles.productItemBtn} onClick={open}>
+                                        Заказать
+                                    </Button>
+                                </Box>
+                            </Grid.Col>
+                        ))
+                    }
                     <Grid.Col span={12}>
                         <Button className={styles.productItemBtnMore} variant={'outline'} fullWidth>
                             Загрузить ещё
@@ -322,325 +279,13 @@ export default function Home() {
 
             <Box className={cl(styles.product, styles.box,)}>
                 <Text component={'h2'} className={cl(styles.title, styles.productTitle)}>ветеринарный препараты</Text>
-                <Grid gutter={50} className={styles.opacity}>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage7} alt={''}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Катозал</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Это стартерные корма для телят, разработанные нами и успешно испытанные в хозяйствах.
-                                Это проверенное на практике энергетические, добавки и витаминно-минеральные премиксы,
-                                которые помогают хозяйствам идти в ногу с мировой практикой. Это профессионально
-                                сбалансированные рационы кормления скота по индивидуально составленным планам, схемы
-                                выращивания телят и телок, программы откорма бычков. Мы всегда готовы поделиться своими
-                                знаниями и опытом с вами с вами. Поэтому с помощью нашей дружной и компетентной команды
-                                вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
-                                максимальный надой молока.
-                            </Text>
-                            <Link href={''} className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Link>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage8} alt={''}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Мастинол</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Это стартерные корма для телят, разработанные нами и успешно испытанные в хозяйствах.
-                                Это проверенное на практике энергетические, добавки и витаминно-минеральные премиксы,
-                                которые помогают хозяйствам идти в ногу с мировой практикой. Это профессионально
-                                сбалансированные рационы кормления скота по индивидуально составленным планам, схемы
-                                выращивания телят и телок, программы откорма бычков. Мы всегда готовы поделиться своими
-                                знаниями и опытом с вами с вами. Поэтому с помощью нашей дружной и компетентной команды
-                                вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
-                                максимальный надой молока.
-                            </Text>
-                            <Link href={''} className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Link>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage9} alt={''}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Mamifori</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Это стартерные корма для телят, разработанные нами и успешно испытанные в хозяйствах.
-                                Это проверенное на практике энергетические, добавки и витаминно-минеральные премиксы,
-                                которые помогают хозяйствам идти в ногу с мировой практикой. Это профессионально
-                                сбалансированные рационы кормления скота по индивидуально составленным планам, схемы
-                                выращивания телят и телок, программы откорма бычков. Мы всегда готовы поделиться своими
-                                знаниями и опытом с вами с вами. Поэтому с помощью нашей дружной и компетентной команды
-                                вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
-                                максимальный надой молока.
-                            </Text>
-                            <Link href={''} className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Link>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage10} alt={''}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Санофлай</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Это стартерные корма для телят, разработанные нами и успешно испытанные в хозяйствах.
-                                Это проверенное на практике энергетические, добавки и витаминно-минеральные премиксы,
-                                которые помогают хозяйствам идти в ногу с мировой практикой. Это профессионально
-                                сбалансированные рационы кормления скота по индивидуально составленным планам, схемы
-                                выращивания телят и телок, программы откорма бычков. Мы всегда готовы поделиться своими
-                                знаниями и опытом с вами с вами. Поэтому с помощью нашей дружной и компетентной команды
-                                вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
-                                максимальный надой молока.
-                            </Text>
-                            <Link href={''} className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Link>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage11} alt={''}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Лактобай</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Это стартерные корма для телят, разработанные нами и успешно испытанные в хозяйствах.
-                                Это проверенное на практике энергетические, добавки и витаминно-минеральные премиксы,
-                                которые помогают хозяйствам идти в ногу с мировой практикой. Это профессионально
-                                сбалансированные рационы кормления скота по индивидуально составленным планам, схемы
-                                выращивания телят и телок, программы откорма бычков. Мы всегда готовы поделиться своими
-                                знаниями и опытом с вами с вами. Поэтому с помощью нашей дружной и компетентной команды
-                                вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
-                                максимальный надой молока.
-                            </Text>
-                            <Link href={''} className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Link>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage12} alt={''}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Диеномаст</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Это стартерные корма для телят, разработанные нами и успешно испытанные в хозяйствах.
-                                Это проверенное на практике энергетические, добавки и витаминно-минеральные премиксы,
-                                которые помогают хозяйствам идти в ногу с мировой практикой. Это профессионально
-                                сбалансированные рационы кормления скота по индивидуально составленным планам, схемы
-                                выращивания телят и телок, программы откорма бычков. Мы всегда готовы поделиться своими
-                                знаниями и опытом с вами с вами. Поэтому с помощью нашей дружной и компетентной команды
-                                вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
-                                максимальный надой молока.
-                            </Text>
-                            <Link href={''} className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Link>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={12}>
-                        <Button className={styles.productItemBtnMore} variant={'outline'} fullWidth>
-                            Загрузить ещё
-                        </Button>
-                    </Grid.Col>
-                </Grid>
+                <Text component={'p'} className={styles.noData}>временно не работают</Text>
             </Box>
 
             <Box className={cl(styles.product, styles.box,)}>
                 <Text component={'h2'} className={cl(styles.title, styles.productTitle)}>Ветеринарный препарат
                     кормовые</Text>
-                <Grid gutter={50} className={styles.opacity}>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage7} alt={''}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Катозал</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Это стартерные корма для телят, разработанные нами и успешно испытанные в хозяйствах.
-                                Это проверенное на практике энергетические, добавки и витаминно-минеральные премиксы,
-                                которые помогают хозяйствам идти в ногу с мировой практикой. Это профессионально
-                                сбалансированные рационы кормления скота по индивидуально составленным планам, схемы
-                                выращивания телят и телок, программы откорма бычков. Мы всегда готовы поделиться своими
-                                знаниями и опытом с вами с вами. Поэтому с помощью нашей дружной и компетентной команды
-                                вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
-                                максимальный надой молока.
-                            </Text>
-                            <Link href={''} className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Link>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage8} alt={''}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Мастинол</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Это стартерные корма для телят, разработанные нами и успешно испытанные в хозяйствах.
-                                Это проверенное на практике энергетические, добавки и витаминно-минеральные премиксы,
-                                которые помогают хозяйствам идти в ногу с мировой практикой. Это профессионально
-                                сбалансированные рационы кормления скота по индивидуально составленным планам, схемы
-                                выращивания телят и телок, программы откорма бычков. Мы всегда готовы поделиться своими
-                                знаниями и опытом с вами с вами. Поэтому с помощью нашей дружной и компетентной команды
-                                вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
-                                максимальный надой молока.
-                            </Text>
-                            <Link href={''} className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Link>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage9} alt={''}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Mamifori</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Это стартерные корма для телят, разработанные нами и успешно испытанные в хозяйствах.
-                                Это проверенное на практике энергетические, добавки и витаминно-минеральные премиксы,
-                                которые помогают хозяйствам идти в ногу с мировой практикой. Это профессионально
-                                сбалансированные рационы кормления скота по индивидуально составленным планам, схемы
-                                выращивания телят и телок, программы откорма бычков. Мы всегда готовы поделиться своими
-                                знаниями и опытом с вами с вами. Поэтому с помощью нашей дружной и компетентной команды
-                                вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
-                                максимальный надой молока.
-                            </Text>
-                            <Link href={''} className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Link>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage10} alt={''}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Санофлай</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Это стартерные корма для телят, разработанные нами и успешно испытанные в хозяйствах.
-                                Это проверенное на практике энергетические, добавки и витаминно-минеральные премиксы,
-                                которые помогают хозяйствам идти в ногу с мировой практикой. Это профессионально
-                                сбалансированные рационы кормления скота по индивидуально составленным планам, схемы
-                                выращивания телят и телок, программы откорма бычков. Мы всегда готовы поделиться своими
-                                знаниями и опытом с вами с вами. Поэтому с помощью нашей дружной и компетентной команды
-                                вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
-                                максимальный надой молока.
-                            </Text>
-                            <Link href={''} className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Link>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage11} alt={''}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Лактобай</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Это стартерные корма для телят, разработанные нами и успешно испытанные в хозяйствах.
-                                Это проверенное на практике энергетические, добавки и витаминно-минеральные премиксы,
-                                которые помогают хозяйствам идти в ногу с мировой практикой. Это профессионально
-                                сбалансированные рационы кормления скота по индивидуально составленным планам, схемы
-                                выращивания телят и телок, программы откорма бычков. Мы всегда готовы поделиться своими
-                                знаниями и опытом с вами с вами. Поэтому с помощью нашей дружной и компетентной команды
-                                вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
-                                максимальный надой молока.
-                            </Text>
-                            <Link href={''} className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Link>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={4}>
-                        <Box className={styles.productItem}>
-                            <Flex justify={'center'}>
-                                <Image src={productImage12} alt={''}/>
-                            </Flex>
-                            <Text component={'h3'} className={styles.productItemTitle}>Диеномаст</Text>
-                            <Text component={'p'} className={styles.productItemDesc}>
-                                Это стартерные корма для телят, разработанные нами и успешно испытанные в хозяйствах.
-                                Это проверенное на практике энергетические, добавки и витаминно-минеральные премиксы,
-                                которые помогают хозяйствам идти в ногу с мировой практикой. Это профессионально
-                                сбалансированные рационы кормления скота по индивидуально составленным планам, схемы
-                                выращивания телят и телок, программы откорма бычков. Мы всегда готовы поделиться своими
-                                знаниями и опытом с вами с вами. Поэтому с помощью нашей дружной и компетентной команды
-                                вы вырастите и поддержите на своей молочной ферме здоровое стадо, а кроме того, получите
-                                максимальный надой молока.
-                            </Text>
-                            <Link href={''} className={styles.productItemLink}>
-                                Подробнее
-                                <Image src={iconArrow} alt={''}/>
-                            </Link>
-                            <Button className={styles.productItemBtn} onClick={open}>
-                                Заказать
-                            </Button>
-                        </Box>
-                    </Grid.Col>
-                    <Grid.Col span={12}>
-                        <Button className={styles.productItemBtnMore} variant={'outline'} fullWidth>
-                            Загрузить ещё
-                        </Button>
-                    </Grid.Col>
-                </Grid>
+                <Text component={'p'} className={styles.noData}>временно не работают</Text>
             </Box>
 
 
@@ -733,7 +378,7 @@ export default function Home() {
                                     связанные с нарушением обмена веществ, улучшает рубцовое пищеварение и конверсию
                                     корма.
                                 </Text>
-                                <Box>
+                                <Box className={styles.productModeTable}>
                                     <Text component={'p'} className={styles.productMoreBodyTableTitle}>
                                         Показатели
                                     </Text>
@@ -745,7 +390,29 @@ export default function Home() {
                         </Grid.Col>
                     </Grid>
                 </Box>
+                <Box p={'0.75rem 1.25rem'}>
+                    <Grid>
+                        <Grid.Col span={4}></Grid.Col>
+                        <Grid.Col span={8}>
+                            <Flex justify={'space-between'} align={'stretch'} gap={'0.5rem'}>
+                                <Box className={styles.productMoreBtnItem}>
+                                    <Link href={'tel:+99898 879 80 08'} className={styles.productItemPhone}>
+                                        <Image src={iconPhone} alt={''}/>
+                                        Консультации по кормлению
+                                    </Link>
+                                </Box>
+                                <Box className={styles.productMoreBtnItem}>
+                                    <Button className={styles.productItemBtn} fullWidth>
+                                        Заказать
+                                    </Button>
+                                </Box>
+                            </Flex>
+                        </Grid.Col>
+                    </Grid>
+                </Box>
+
             </Modal>
+
 
         </Box>
     );
