@@ -26,8 +26,8 @@ export default function Footer() {
                             <Image src={Icon1} alt={''}/>
                         </Box>
                         <Flex direction={'column'} gap={'0.25rem'}>
-                            <Text component={'p'} className={styles.footerInfoText}>+99899 020-99-30</Text>
-                            <Text component={'p'} className={styles.footerInfoText}>+99899 020-99-30</Text>
+                            <Text component={'p'} className={styles.footerInfoText}>+99899 879-80-08</Text>
+                            <Text component={'p'} className={styles.footerInfoText}>+99897 120-33-22</Text>
                         </Flex>
                     </Link>
                     <Link href={'/'} className={styles.footerInfo}>
@@ -35,8 +35,7 @@ export default function Footer() {
                             <Image src={Icon2} alt={''}/>
                         </Box>
                         <Text component={'p'} className={styles.footerInfoText}>
-                            г.Ташкент, Мирзо-Улугбекский <br/>
-                            район, улица Буюк Ипак Йули, дом 481, 100142
+                            Гор.Ташкент. Мирзо-Улугбекский р-н, <br/> ул. Буюк-ипак йули дом 434.
                         </Text>
                     </Link>
                 </Flex>
