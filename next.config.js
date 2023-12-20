@@ -3,6 +3,7 @@ const nextTranslate = require('next-translate-plugin')
 
 const nextConfig = {
     reactStrictMode: true,
+
     webpack(config) {
         config.module.rules.push({
             loader: '@svgr/webpack',
