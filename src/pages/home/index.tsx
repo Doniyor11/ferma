@@ -221,34 +221,35 @@ export default function Home() {
                         Консультации по кормлению
                     </Link>
                 </Flex>
-                <Grid gutter={50}>
-                    {
-                        product.map((item, index) => (
-                            <Grid.Col span={4} key={index}>
-                                <Box className={styles.productItem}>
-                                    <Flex justify={'center'}>
-                                        <Image src={item.img} alt={''} width={130}/>
-                                    </Flex>
-                                    <Text component={'h3'} className={styles.productItemTitle}>{item.title}</Text>
-                                    <Text component={'p'}
-                                          className={styles.productItemDesc}>{item.desc}</Text>
-                                    <Text className={styles.productItemLink} onClick={openMore}>
-                                        Подробнее
-                                        <Image src={iconArrow} alt={''}/>
-                                    </Text>
-                                    <Button className={styles.productItemBtn} onClick={open}>
-                                        Заказать
-                                    </Button>
-                                </Box>
-                            </Grid.Col>
-                        ))
-                    }
-                    <Grid.Col span={12}>
-                        <Button className={styles.productItemBtnMore} variant={'outline'} fullWidth>
-                            Загрузить ещё
-                        </Button>
-                    </Grid.Col>
-                </Grid>
+                {/*<Grid gutter={50}>*/}
+                {/*    {*/}
+                {/*        product.map((item, index) => (*/}
+                {/*            <Grid.Col span={4} key={index}>*/}
+                {/*                <Box className={styles.productItem}>*/}
+                {/*                    <Flex justify={'center'}>*/}
+                {/*                        <Image src={item.img} alt={''} width={130}/>*/}
+                {/*                    </Flex>*/}
+                {/*                    <Text component={'h3'} className={styles.productItemTitle}>{item.title}</Text>*/}
+                {/*                    <Text component={'p'}*/}
+                {/*                          className={styles.productItemDesc}>{item.desc}</Text>*/}
+                {/*                    <Text className={styles.productItemLink} onClick={openMore}>*/}
+                {/*                        Подробнее*/}
+                {/*                        <Image src={iconArrow} alt={''}/>*/}
+                {/*                    </Text>*/}
+                {/*                    <Button className={styles.productItemBtn} onClick={open}>*/}
+                {/*                        Заказать*/}
+                {/*                    </Button>*/}
+                {/*                </Box>*/}
+                {/*            </Grid.Col>*/}
+                {/*        ))*/}
+                {/*    }*/}
+                {/*    <Grid.Col span={12}>*/}
+                {/*        <Button className={styles.productItemBtnMore} variant={'outline'} fullWidth>*/}
+                {/*            Загрузить ещё*/}
+                {/*        </Button>*/}
+                {/*    </Grid.Col>*/}
+                {/*</Grid>*/}
+                <Text component={'p'} className={styles.noData}>в разработке</Text>
             </Box>
 
             <Box className={cl(styles.product, styles.box,)}>
