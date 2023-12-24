@@ -10,21 +10,30 @@ import Image from "next/image";
 import IconLogo from '../../../../public/images/LOGO.png';
 
 export default function Footer() {
-    const matches = useMediaQuery('(max-width: 1439px)');
+    const matchesM = useMediaQuery('(max-width: 992px)');
+    const matchesS = useMediaQuery('(max-width: 576px)');
     const {t} = useTranslation('common');
     const scrollTop = () => {
         window.scrollTo({top: 0, behavior: 'smooth',});
     }
     return (
         <Box className={styles.footer}>
-            <Flex justify={'space-between'}>
-                <Flex align={'center'} gap={'1rem'}>
+            <Flex justify={'space-between'} direction={
+                matchesM ? 'column' : 'row'
+            } gap={'2rem'} align={
+                matchesM ? 'center' : 'flex-start'
+            }>
+                <Flex align={'center'} gap={'1rem'} direction={
+                    matchesS ? 'column' : 'row'
+                }>
                     <Text component={'p'} className={styles.footerText}>
                         Vidpremium.uz
                     </Text>
                     <Image src={IconLogo} alt={'Logo'} width={200}/>
                 </Flex>
-                <Flex gap={'2rem'}>
+                <Flex gap={'2rem'} direction={
+                    matchesS ? 'column' : 'row'
+                } justify={"center"}>
                     <Box className={styles.footerInfo}>
                         <Box>
                             <Image src={Icon1} alt={''}/>

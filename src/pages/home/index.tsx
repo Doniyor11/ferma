@@ -168,7 +168,7 @@ const product = [
 
 export default function Home() {
     const navigate = useRouter();
-    const matches = useMediaQuery('(max-width: 992px)');
+    const matches = useMediaQuery('(max-width: 1024px)');
     const matchesM = useMediaQuery('(max-width: 845px)');
     const matchesS = useMediaQuery('(max-width: 576px)');
     const {t} = useTranslation('common');
@@ -188,7 +188,9 @@ export default function Home() {
 
             <Box className={cl(styles.about, styles.box)}>
                 <Grid gutter={50}>
-                    <Grid.Col span={8}>
+                    <Grid.Col span={
+                        matches ? 12 : 8
+                    }>
                         <Flex direction={'column'} gap={'1rem 0'} className={styles.aboutWrapper}>
                             <Text component={'h2'} className={styles.title}>О нас</Text>
                             <Text component={'p'} className={styles.subTitle}>OOO “AVORA BIOTECH” предоставляем вам
@@ -205,7 +207,7 @@ export default function Home() {
                             </Text>
                         </Flex>
                     </Grid.Col>
-                    <Grid.Col span={4}>
+                    <Grid.Col span={matches ? 12 : 4}>
                         <Box className={styles.aboutImage}>
                             <Image src={aboutImage} alt={''}/>
                         </Box>
@@ -214,7 +216,9 @@ export default function Home() {
             </Box>
 
             <Box className={cl(styles.product, styles.box)}>
-                <Flex align={'center'} justify={'space-between'} className={styles.productTitleHead}>
+                <Flex align={'center'} justify={'space-between'} className={styles.productTitleHead} direction={
+                    matchesS ? 'column' : 'row'
+                } gap={'2rem'}>
                     <Text component={'h2'} className={cl(styles.title,)}>Кормовые добавки</Text>
                     <Link href={'tel:+99898 879 80 08'} className={styles.productLink}>
                         <Image src={iconPhone} alt={''}/>
@@ -260,7 +264,7 @@ export default function Home() {
             <Box className={cl(styles.product, styles.box)}>
                 <Text component={'h2'} className={cl(styles.title, styles.productTitle)}>Наши сервисные услуги</Text>
                 <Grid gutter="xl">
-                    <Grid.Col span={6}>
+                    <Grid.Col span={matchesM ? 12 : 6}>
                         <Box>
                             <Flex justify={'center'}>
                                 <Image src={icon1} alt={''} width={300}/>
@@ -270,7 +274,9 @@ export default function Home() {
                             </Text>
                         </Box>
                     </Grid.Col>
-                    <Grid.Col span={6}>
+                    <Grid.Col span={
+                        matchesM ? 12 : 6
+                    }>
                         <Box>
                             <Flex justify={'center'}>
                                 <Image src={icon2} alt={''} width={300}/>
@@ -324,7 +330,6 @@ export default function Home() {
                 </Flex>
             </Modal>
 
-            //
 
             <Modal opened={openedMore} onClose={closeMore} withCloseButton={false} centered classNames={{
                 root: styles.modalRoot,

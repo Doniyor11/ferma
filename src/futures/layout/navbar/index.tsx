@@ -26,7 +26,7 @@ const data = [
 ];
 
 export default function Navbar() {
-    const matches = useMediaQuery('(max-width: 1550px)');
+    const matchesS = useMediaQuery('(max-width: 576px)');
     const location = usePathname();
     const navigate = useRouter();
     const [opened, {open, close}] = useDisclosure(false);
@@ -42,7 +42,9 @@ export default function Navbar() {
     return (
         <>
             <Box className={styles.navbar}>
-                <Flex align={'center'} gap={'1rem'}>
+                <Flex align={'center'} gap={'1rem'} direction={
+                    matchesS ? 'column' : 'row'
+                }>
                     <Link href={'/'} className={styles.navbarLogo}>Vidpremium.uz</Link>
                     <Image src={IconLogo} alt={'Logo'} width={200}/>
                 </Flex>
