@@ -13,7 +13,6 @@ import useTranslation from 'next-translate/useTranslation';
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Icon1 from "../../../../public/images/span.img-convert.png";
 
 const data = [
     {
@@ -61,14 +60,6 @@ export default function Navbar() {
                 {/*        <IconUz/>) || (lang === 'en' && <IconRu/>)}*/}
 
                 {/*/>*/}
-                <Box className={styles.footerInfo}>
-                    <Box>
-                        <Image src={Icon1} alt={''}/>
-                    </Box>
-                    <Flex direction={'column'} gap={'0.25rem'}>
-                        <Link href={'tel:+99899 853-05-05'} className={styles.footerInfoText}>+99899 853-05-05</Link>
-                    </Flex>
-                </Box>
             </Box>
         </>
     );
